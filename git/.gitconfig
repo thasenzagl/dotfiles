@@ -1,0 +1,5 @@
+[core]
+	excludesfile = /Users/Thomas/dropbox/dotfiles/git/.gitignore_global
+	excludefiles = /Users/Thomas/dropbox/dotfiles/git/.gitignore_global
+[user]
+	email = thomas.hasenzagl@gmail.com
