@@ -57,6 +57,9 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+""""""""""""""""""Copy Paste Integration""""""""""""""""""""
+set clipboard=unnamed
+
 """"""""""""""""""Vim-Latex"""""""""""""""""""""""""""""""""
 
 " REQUIRED. This makes vim invoke Latex-Suite when you open a tex file.
