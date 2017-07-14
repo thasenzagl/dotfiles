@@ -16,3 +16,4 @@ Thumbs.db
 __pycache__/
 .ipynb_checkpoints
 *.py.swp
+*.py.swo
