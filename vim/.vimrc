@@ -25,11 +25,11 @@ Plugin 'christoomey/vim-tmux-navigator'
 call vundle#end() 
 filetype plugin indent on 
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 imap jj <Esc> 
 
-"""""""""""""""""""LineNumbers"""""""""""""""""""""""""""""""
+"""""""""""""""""""LineNumbers""""""""""""""""""""""""""""""""
 set nu
 
 """""""""""""""""""tabs,spaces,indents""""""""""""""""""""""""
@@ -51,7 +51,7 @@ syntax enable
 set background=dark
 colorscheme wombat256
 
-""""""""""""""""""Split Screen""""""""""""""""""""""""""""""
+""""""""""""""""""Split Screen"""""""""""""""""""""""""""""""
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>

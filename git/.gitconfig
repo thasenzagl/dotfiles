@@ -3,3 +3,5 @@
 	excludefiles = /Users/Thomas/dropbox/dotfiles/git/.gitignore_global
 [user]
 	email = thomas.hasenzagl@gmail.com
+[credential]
+	helper = osxkeychain
