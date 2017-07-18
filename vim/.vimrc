@@ -20,6 +20,7 @@ Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'kien/ctrlp.vim' 
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'xuhdev/vim-latex-live-preview'
 
 " All of your Plugins must be added before the following line
 call vundle#end() 
@@ -86,7 +87,9 @@ let g:tex_flavor='latex'
 if has("unix") && match(system("uname"),'Darwin') != -1
     " It's a Mac!
     let g:Tex_ViewRule_pdf = 'open -a Preview.app' 
+    let g:livepreview_previewer = 'open -a Preview.app' " use Preview pdf viewer on a Mac
 endif   
+
 
 """"""""""""""""Julia""""""""""""""""""""""""""""""""""""""""""
 
