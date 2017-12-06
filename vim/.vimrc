@@ -1,6 +1,6 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " My vimrc
-" author: Thomas Hasenzagl, thomas@gmail.com
+" author: Thomas Hasenzagl, thomas.hasenzagl@gmail.com
 " date: April 9, 2017
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Vundle
@@ -50,7 +50,7 @@ set termguicolors
 syntax on
 syntax enable
 set background=dark
-colorscheme wombat256
+colorscheme jellybeans 
 
 """"""""""""""""""Split Screen"""""""""""""""""""""""""""""""
 nnoremap <C-J> <C-W><C-J>
@@ -90,6 +90,9 @@ if has("unix") && match(system("uname"),'Darwin') != -1
     let g:livepreview_previewer = 'open -a Preview.app' " use Preview pdf viewer on a Mac
 endif   
 
+""""""""""""""""Spell Check""""""""""""""""""""""""""""""""""""
+
+set spelllang=en
 
 """"""""""""""""Julia""""""""""""""""""""""""""""""""""""""""""
 
