@@ -21,6 +21,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'xuhdev/vim-latex-live-preview'
+Plugin 'vimwiki/vimwiki'
 
 " All of your Plugins must be added before the following line
 call vundle#end() 
@@ -60,6 +61,12 @@ nnoremap <C-H> <C-W><C-H>
 
 """"""""""""""""""Copy Paste Integration""""""""""""""""""""
 set clipboard=unnamed
+
+""""""""""""""""""Vimwiki"""""""""""""""""""""""""""""""""""
+
+set nocompatible
+filetype plugin on
+syntax on
 
 """"""""""""""""""Vim-Latex"""""""""""""""""""""""""""""""""
 
