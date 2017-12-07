@@ -22,6 +22,7 @@ Plugin 'tmhedberg/SimpylFold'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'xuhdev/vim-latex-live-preview'
 Plugin 'vimwiki/vimwiki'
+Plugin 'suan/vim-instant-markdown'
 
 " All of your Plugins must be added before the following line
 call vundle#end() 
@@ -67,6 +68,16 @@ set clipboard=unnamed
 set nocompatible
 filetype plugin on
 syntax on
+
+" Use markdown with vimwiki
+let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
+
+" Instant markdown
+let g:instant_markdown_autostart = 0
+map <leader>md :InstantMarkdownPreview<CR>
+
+" use F3 to create a timestamp 
+map <F3> :r! date +"\%Y-\%m-\%d \%H:\%M:\%S"<cr>
 
 """"""""""""""""""Vim-Latex"""""""""""""""""""""""""""""""""
 
