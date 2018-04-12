@@ -1,7 +1,6 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " My vimrc
 " author: Thomas Hasenzagl, thomas.hasenzagl@gmail.com
-" date: April 9, 2017
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Vundle
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -23,6 +22,7 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'xuhdev/vim-latex-live-preview'
 Plugin 'vimwiki/vimwiki'
 Plugin 'suan/vim-instant-markdown'
+Plugin 'ervandew/supertab'
 
 " All of your Plugins must be added before the following line
 call vundle#end() 
