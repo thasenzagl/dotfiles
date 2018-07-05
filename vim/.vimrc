@@ -14,7 +14,6 @@ Plugin 'flazz/vim-colorschemes'
 
 " Other Plugins
 Plugin 'JuliaEditorSupport/julia-vim'
-Plugin 'scrooloose/nerdtree'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'kien/ctrlp.vim' 
 Plugin 'tmhedberg/SimpylFold'
@@ -109,6 +108,12 @@ if has("unix") && match(system("uname"),'Darwin') != -1
     let g:livepreview_previewer = 'open -a Preview.app' " use Preview pdf viewer on a Mac
 endif   
 
+" use \lx to switch compiler to xelatex. then use \ll to compile.
+function SetXeTex()
+    let g:Tex_CompileRule_pdf = 'xelatex -aux-directory=F:/Vim/my_latex_doc/temp --synctex=-1 -src-specials -interaction=nonstopmode $*'
+endfunction
+map <Leader>lx :<C-U>call SetXeTex()<CR>
+
 """"""""""""""""Spell Check""""""""""""""""""""""""""""""""""""
 
 set spelllang=en
@@ -118,9 +123,7 @@ set spelllang=en
 " .jl files are sometimes recognized as lisp files by default. This fixes it. 
 autocmd BufRead,BufNewFile *.jl :set filetype=julia 
 
-"""""""""""""""Nerdtree""""""""""""""""""""""""""""""""""""""""
-autocmd vimenter * NERDTree
-let NERDTreeIgnore = ['\~$','\.pyc$','\*NTUSER*','\*ntuser*','\NTUSER.DAT','\ntuser.ini']
-autocmd VimEnter * silent NERDTree
+""""""""""""""""netrw""""""""""""""""""""""""""""""""""""""""""
 
-
+let g:netrw_liststyle=3 " open netrw as a tree
+let g:netrw_winsize=20 " smaller windowsize 
