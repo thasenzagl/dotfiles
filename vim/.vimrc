@@ -22,7 +22,7 @@ Plugin 'xuhdev/vim-latex-live-preview'
 Plugin 'vimwiki/vimwiki'
 Plugin 'suan/vim-instant-markdown'
 Plugin 'ervandew/supertab'
-Plugin 'tpope/vim-fugitive'
+Plugin 'morhetz/gruvbox'
 
 " All of your Plugins must be added before the following line
 call vundle#end() 
@@ -43,16 +43,7 @@ set smarttab
 set autoindent
 
 """""""""""""""""""Colorscheme"""""""""""""""""""""""""""""""
-
-" set Vim-specific sequences for RGB colors
-let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-set termguicolors
-
-syntax on
-syntax enable
-set background=dark
-colorscheme jellybeans 
+colorscheme gruvbox 
 
 """"""""""""""""""Split Screen"""""""""""""""""""""""""""""""
 nnoremap <C-J> <C-W><C-J>
