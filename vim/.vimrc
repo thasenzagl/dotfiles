@@ -118,3 +118,4 @@ autocmd BufRead,BufNewFile *.jl :set filetype=julia
 
 let g:netrw_liststyle=3 " open netrw as a tree
 let g:netrw_winsize=20 " smaller windowsize 
+let g:netrw_banner = 0 " D: delete, R: rename, x: open
