@@ -55,13 +55,12 @@ nnoremap <C-H> <C-W><C-H>
 set clipboard=unnamed
 
 """"""""""""""""""Vimwiki"""""""""""""""""""""""""""""""""""
-
 set nocompatible
 filetype plugin on
 syntax on
 
 " Use markdown with vimwiki
-let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
+let g:vimwiki_list = [{'path': '/Users/Thomas/Dropbox/documents/wiki', 'syntax': 'markdown', 'ext': '.md'}]
 
 " Instant markdown
 let g:instant_markdown_autostart = 0
