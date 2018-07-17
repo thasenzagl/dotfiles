@@ -29,7 +29,6 @@ call vundle#end()
 filetype plugin indent on 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 imap jj <Esc> 
 
 """""""""""""""""""LineNumbers""""""""""""""""""""""""""""""""
@@ -60,7 +59,7 @@ filetype plugin on
 syntax on
 
 " Use markdown with vimwiki
-let g:vimwiki_list = [{'path': '/Users/Thomas/Dropbox/documents/wiki', 'syntax': 'markdown', 'ext': '.md'}]
+let g:vimwiki_list = [{'path': '/Users/Thomas/Dropbox/research/wiki', 'syntax': 'markdown', 'ext': '.md'}]
 
 " Instant markdown
 let g:instant_markdown_autostart = 0
