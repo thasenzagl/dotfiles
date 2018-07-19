@@ -3,7 +3,8 @@
 # author: Thomas Hasenzagl, thomas.hasenzagl@gmail.com
 #######################################
 
-# Theme (Leave empty for pure theme)
+# Pure Theme
+# Install theme using `npm install --global pure-prompt`
 autoload -U promptinit; promptinit
 prompt pure
 

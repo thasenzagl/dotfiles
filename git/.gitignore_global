@@ -1,7 +1,6 @@
 ##########################
 # Global gitignore file
-# author: Thomas Hasenzagl
-# date: 05/02/17
+# author: Thomas Hasenzagl, thomas.hasenzagl@gmail.com
 # ########################
  
 # OSX specific
@@ -17,3 +16,6 @@ __pycache__/
 .ipynb_checkpoints
 *.py.swp
 *.py.swo
+
+# Vim
+*.swp
