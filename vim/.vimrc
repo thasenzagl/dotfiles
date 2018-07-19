@@ -10,25 +10,27 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
           
 " Color Shemes
-Plugin 'flazz/vim-colorschemes'
+"Plugin 'flazz/vim-colorschemes'
 
-" Other Plugins
 Plugin 'JuliaEditorSupport/julia-vim'
-Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-Plugin 'kien/ctrlp.vim' 
-Plugin 'tmhedberg/SimpylFold'
-Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'powerline/powerline' 
+Plugin 'tmhedberg/SimpylFold' " python folding
+Plugin 'christoomey/vim-tmux-navigator' "tmux split screen navigation
 Plugin 'xuhdev/vim-latex-live-preview'
 Plugin 'vimwiki/vimwiki'
 Plugin 'suan/vim-instant-markdown'
-Plugin 'ervandew/supertab'
-Plugin 'morhetz/gruvbox'
+Plugin 'morhetz/gruvbox' "gruvbox colorscheme
 
 " All of your Plugins must be added before the following line
 call vundle#end() 
 filetype plugin indent on 
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""Silence Python3 (NOT IDEAL)""""""""""""""""
+if has('python3')
+  silent! python3 1
+endif
+
+"""""""""""""""""""map <Esc> to jj""""""""""""""""""""""""""""
 imap jj <Esc> 
 
 """""""""""""""""""LineNumbers""""""""""""""""""""""""""""""""
@@ -45,10 +47,10 @@ set autoindent
 colorscheme gruvbox 
 
 """"""""""""""""""Split Screen"""""""""""""""""""""""""""""""
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
+"nnoremap <C-J> <C-W><C-J>
+"nnoremap <C-K> <C-W><C-K>
+"nnoremap <C-L> <C-W><C-L>
+"nnoremap <C-H> <C-W><C-H>
 
 """"""""""""""""""Copy Paste Integration""""""""""""""""""""
 set clipboard=unnamed
