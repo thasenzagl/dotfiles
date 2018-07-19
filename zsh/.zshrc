@@ -1,12 +1,13 @@
-# Path to your oh-my-zsh installation.
-export ZSH="/Users/Thomas/dropbox/dotfiles/zsh/.oh-my-zsh"
+#######################################
+# My tmux config file
+# author: Thomas Hasenzagl, thomas.hasenzagl@gmail.com
+#######################################
 
-# Theme
-ZSH_THEME="powerlevel9k/powerlevel9k"
+# Theme (Leave empty for pure theme)
+autoload -U promptinit; promptinit
+prompt pure
 
 # Plugins
 plugins=(
   git
 )
-
-source $ZSH/oh-my-zsh.sh
