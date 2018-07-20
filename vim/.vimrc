@@ -9,11 +9,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
           
-" Color Shemes
-"Plugin 'flazz/vim-colorschemes'
-
 Plugin 'JuliaEditorSupport/julia-vim'
-Plugin 'powerline/powerline'
 Plugin 'tmhedberg/SimpylFold' " python folding
 Plugin 'christoomey/vim-tmux-navigator' "tmux split screen navigation
 Plugin 'xuhdev/vim-latex-live-preview'
@@ -48,15 +44,6 @@ colorscheme gruvbox
 
 """"""""""""""""""Copy Paste Integration""""""""""""""""""""
 set clipboard=unnamed
-
-""""""""""""""""""Powerline"""""""""""""""""""""""""""""""""
-set guifont=Inconsolata\ for\ Powerline:h15
-let g:Powerline_symbols = 'fancy'
-set encoding=utf-8
-set t_Co=256
-set fillchars+=stl:\ ,stlnc:\
-set term=xterm-256color
-set termencoding=utf-8
 
 """"""""""""""""""Vimwiki"""""""""""""""""""""""""""""""""""
 set nocompatible
