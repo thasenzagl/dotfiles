@@ -12,3 +12,6 @@ prompt pure
 plugins=(
   git
 )
+
+# open tmux when terminal is opened
+if [ "$TMUX" = "" ]; then tmux; fi
