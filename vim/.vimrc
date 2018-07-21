@@ -12,7 +12,6 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'JuliaEditorSupport/julia-vim'
 Plugin 'tmhedberg/SimpylFold' " python folding
 Plugin 'christoomey/vim-tmux-navigator' "tmux split screen navigation
-Plugin 'xuhdev/vim-latex-live-preview'
 Plugin 'vimwiki/vimwiki'
 Plugin 'suan/vim-instant-markdown'
 Plugin 'morhetz/gruvbox' "gruvbox colorscheme
@@ -90,9 +89,7 @@ let g:tex_flavor='latex'
 
 " Fix Pdf Viewer on Mac
 if has("unix") && match(system("uname"),'Darwin') != -1
-    " It's a Mac!
     let g:Tex_ViewRule_pdf = 'open -a Preview.app' 
-    let g:livepreview_previewer = 'open -a Preview.app' " use Preview pdf viewer on a Mac
 endif   
 
 " use \lx to switch compiler to xelatex. then use \ll to compile.
@@ -100,16 +97,6 @@ function SetXeTex()
     let g:Tex_CompileRule_pdf = 'xelatex -aux-directory=F:/Vim/my_latex_doc/temp --synctex=-1 -src-specials -interaction=nonstopmode $*'
 endfunction
 map <Leader>lx :<C-U>call SetXeTex()<CR>
-
-""""""""""""""""Spell Check""""""""""""""""""""""""""""""""""""
-
-set spelllang=en
-
-""""""""""""""""Julia""""""""""""""""""""""""""""""""""""""""""
-
-" .jl files are sometimes recognized as lisp files by default. This fixes it. 
-autocmd BufRead,BufNewFile *.jl :set filetype=julia 
-
 """"""""""""""""netrw""""""""""""""""""""""""""""""""""""""""""
 
 let g:netrw_liststyle=3 " open netrw as a tree
