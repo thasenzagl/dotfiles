@@ -3,7 +3,7 @@
 ## Create symlink to the dotfiles:
 `ln -s ~/dotfiles/vim/.vimrc ~/.vimrc`<br/>
 `ln -s ~/dotfiles/git/.gitconfig ~/.gitconfig`<br/>
-`ln -s ~/dotfiles/tmux/.tmux.config ~/.tmux.comfix`<br/>
+`ln -s ~/dotfiles/tmux/.tmux.conf ~/.tmux.conf`<br/>
 `ln -s ~/dotfiles/zsh/.zshrc ~/.zshrc`<br/>
 
 ## Colorscheme.
