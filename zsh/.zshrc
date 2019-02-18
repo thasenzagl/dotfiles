@@ -15,3 +15,5 @@ plugins=(
 
 # open tmux when terminal is opened
 if [ "$TMUX" = "" ]; then tmux; fi
+
+export PATH=~/anaconda3/bin:$PATH

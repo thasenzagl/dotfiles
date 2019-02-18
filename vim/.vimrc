@@ -15,6 +15,7 @@ Plugin 'christoomey/vim-tmux-navigator' "tmux split screen navigation
 Plugin 'vimwiki/vimwiki'
 Plugin 'suan/vim-instant-markdown'
 Plugin 'morhetz/gruvbox' "gruvbox colorscheme
+Plugin 'vim-latex/vim-latex'
 
 " All of your Plugins must be added before the following line
 call vundle#end() 
