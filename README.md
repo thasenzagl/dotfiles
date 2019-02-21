@@ -10,6 +10,9 @@
 The "pure" zsh theme needs to first be installed with<br/>
 `npm install --global pure-prompt`
 
+## Change your default shell to zsh
+chsh -s /bin/zsh
+
 ## OSX specific
 Install reattach-to-user-namespace<br/>
 `brew install reattach-to-user-namespace`
