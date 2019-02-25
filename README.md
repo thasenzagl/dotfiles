@@ -17,5 +17,9 @@ The "pure" zsh theme needs to first be installed with<br/>
 Install reattach-to-user-namespace<br/>
 `brew install reattach-to-user-namespace`
 
+Use Homebrew vim
+`brew install vim`
+`brew link vim`
+
 ## Colorscheme.
 Vim uses the gruvbox colorscheme. The same colorscheme for iterm2 is available here: https://github.com/herrbischoff/iterm2-gruvbox
