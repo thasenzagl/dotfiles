@@ -57,7 +57,7 @@ filetype plugin on
 syntax on
 
 " Use markdown with vimwiki
-let g:vimwiki_list = [{'path': '/Users/Thomas/Dropbox/research/wiki', 'syntax': 'markdown', 'ext': '.md'}]
+let g:vimwiki_list = [{'path': '/Users/thomashasenzagl/dropbox/research/wiki', 'syntax': 'markdown', 'ext': '.md'}]
 
 " Instant markdown
 let g:instant_markdown_autostart = 0
@@ -98,8 +98,7 @@ function SetXeTex()
     let g:Tex_CompileRule_pdf = 'xelatex -aux-directory=F:/Vim/my_latex_doc/temp --synctex=-1 -src-specials -interaction=nonstopmode $*'
 endfunction
 map <Leader>lx :<C-U>call SetXeTex()<CR>
-""""""""""""""""netrw""""""""""""""""""""""""""""""""""""""""""
 
-let g:netrw_liststyle=3 " open netrw as a tree
-let g:netrw_winsize=20 " smaller windowsize 
-let g:netrw_banner = 0 " D: delete, R: rename, x: open
+" prevent vim-latex to open error files automatically
+let g:Tex_GotoError=0
+
