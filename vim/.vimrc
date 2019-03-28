@@ -15,7 +15,9 @@ Plugin 'christoomey/vim-tmux-navigator' "tmux split screen navigation
 Plugin 'vimwiki/vimwiki'
 Plugin 'suan/vim-instant-markdown'
 Plugin 'morhetz/gruvbox' "gruvbox colorscheme
-Plugin 'vim-latex/vim-latex'
+Plugin 'lervag/vimtex' "latex integration for vim
+Plugin 'SirVer/ultisnips' " Track the engine.
+Plugin 'honza/vim-snippets' " Snippets are separated from the engine. Add this if you want them:
 
 " All of your Plugins must be added before the following line
 call vundle#end() 
@@ -66,39 +68,17 @@ map <leader>md :InstantMarkdownPreview<CR>
 " use F3 to create a timestamp 
 map <F3> :r! date +"\%Y-\%m-\%d \%H:\%M:\%S"<cr>
 
-""""""""""""""""""Vim-Latex"""""""""""""""""""""""""""""""""
+""""""""""""""""""Vimtex""""""""""""""""""""""""""""""""""""
+" Change default target to pdf, if not dvi is used
+let g:Tex_DefaultTargetFormat = 'pdf'
+ 
+" Setup the compile rule for pdf to use pdflatex with synctex enabled
+let g:Tex_CompileRule_pdf = 'pdflatex -synctex=1 --interaction=nonstopmode $*' 
+ 
+" PDF display rule
+let g:vimtex_view_method = 'skim'
 
-" REQUIRED. This makes vim invoke Latex-Suite when you open a tex file.
-filetype plugin on
+let g:vimtex_view_general_options = '-r @line @pdf @tex'
 
-" IMPORTANT: win32 users will need to have 'shellslash' set so that latex
-" can be called correctly.
-set shellslash
-
-" IMPORTANT: grep will sometimes skip displaying the file name if you
-" search in a singe file. This will confuse Latex-Suite. Set your grep
-" program to always generate a file-name.
-set grepprg=grep\ -nH\ $*
-
-" OPTIONAL: This enables automatic indentation as you type.
-filetype indent on
-
-" OPTIONAL: Starting with Vim 7, the filetype of empty .tex files defaults to
-" 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
-" The following changes the default filetype back to 'tex':
-let g:tex_flavor='latex'
-
-" Fix Pdf Viewer on Mac
-if has("unix") && match(system("uname"),'Darwin') != -1
-    let g:Tex_ViewRule_pdf = 'open -a Preview.app' 
-endif   
-
-" use \lx to switch compiler to xelatex. then use \ll to compile.
-function SetXeTex()
-    let g:Tex_CompileRule_pdf = 'xelatex -aux-directory=F:/Vim/my_latex_doc/temp --synctex=-1 -src-specials -interaction=nonstopmode $*'
-endfunction
-map <Leader>lx :<C-U>call SetXeTex()<CR>
-
-" prevent vim-latex to open error files automatically
-let g:Tex_GotoError=0
-
+""""""""""""""""""Snippets""""""""""""""""""""""""""""""""""""
+let g:UltiSnipsExpandTrigger="<tab>"
