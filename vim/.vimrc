@@ -17,7 +17,6 @@ Plugin 'suan/vim-instant-markdown'
 Plugin 'morhetz/gruvbox' "gruvbox colorscheme
 Plugin 'lervag/vimtex' "latex integration for vim
 Plugin 'SirVer/ultisnips' " Track the engine.
-Plugin 'honza/vim-snippets' " Snippets are separated from the engine. Add this if you want them:
 
 " All of your Plugins must be added before the following line
 call vundle#end() 
