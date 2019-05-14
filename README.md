@@ -19,6 +19,7 @@ Install reattach-to-user-namespace<br/>
 
 Use Homebrew vim
 `brew install vim`
+
 `brew link vim`
 
 ## Colorscheme.
