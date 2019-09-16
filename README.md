@@ -21,5 +21,8 @@ Use Homebrew vim
 `brew install vim` and
 `brew link vim`
 
+## Set up your global gitignore
+`git config --global core.excludesfile ~/.gitignore_global`
+
 ## Colorscheme.
 Vim uses the gruvbox colorscheme. The same colorscheme for iterm2 is available here: https://github.com/herrbischoff/iterm2-gruvbox
