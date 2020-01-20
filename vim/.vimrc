@@ -12,7 +12,6 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'JuliaEditorSupport/julia-vim'
 Plugin 'tmhedberg/SimpylFold' " python folding
 Plugin 'christoomey/vim-tmux-navigator' "tmux split screen navigation
-Plugin 'vimwiki/vimwiki'
 Plugin 'suan/vim-instant-markdown'
 Plugin 'morhetz/gruvbox' "gruvbox colorscheme
 Plugin 'lervag/vimtex' "latex integration for vim
@@ -42,6 +41,8 @@ set autoindent
 
 """""""""""""""""""Colorscheme"""""""""""""""""""""""""""""""
 colorscheme gruvbox 
+set nocompatible
+syntax on
 
 """"""""""""""""""Split Screen"""""""""""""""""""""""""""""""
 nnoremap <C-J> <C-W><C-J>
@@ -52,32 +53,17 @@ nnoremap <C-H> <C-W><C-H>
 """"""""""""""""""Copy Paste Integration""""""""""""""""""""
 set clipboard=unnamed
 
-""""""""""""""""""Vimwiki"""""""""""""""""""""""""""""""""""
-set nocompatible
-filetype plugin on
-syntax on
-
-" Use markdown with vimwiki
-let g:vimwiki_list = [{'path': '/Users/thomashasenzagl/dropbox/research/wiki', 'syntax': 'markdown', 'ext': '.md'}]
-
-" Instant markdown
-let g:instant_markdown_autostart = 0
-map <leader>md :InstantMarkdownPreview<CR>
-
-" use F3 to create a timestamp 
-map <F3> :r! date +"\%Y-\%m-\%d \%H:\%M:\%S"<cr>
-
 """"""""""""""""""Vimtex""""""""""""""""""""""""""""""""""""
 " Change default target to pdf, if not dvi is used
-let g:Tex_DefaultTargetFormat = 'pdf'
+"let g:Tex_DefaultTargetFormat = 'pdf'
  
 " Setup the compile rule for pdf to use pdflatex with synctex enabled
-let g:Tex_CompileRule_pdf = 'pdflatex -synctex=1 --interaction=nonstopmode $*' 
+"let g:Tex_CompileRule_pdf = 'pdflatex -synctex=1 --interaction=nonstopmode $*' 
  
 " PDF display rule
-let g:vimtex_view_method = 'skim'
+"let g:vimtex_view_method = 'skim'
 
-let g:vimtex_view_general_options = '-r @line @pdf @tex'
+"let g:vimtex_view_general_options = '-r @line @pdf @tex'
 
 """"""""""""""""""Snippets""""""""""""""""""""""""""""""""""""
 let g:UltiSnipsExpandTrigger="<tab>"
