@@ -55,15 +55,15 @@ set clipboard=unnamed
 
 """"""""""""""""""Vimtex""""""""""""""""""""""""""""""""""""
 " Change default target to pdf, if not dvi is used
-"let g:Tex_DefaultTargetFormat = 'pdf'
+let g:Tex_DefaultTargetFormat = 'pdf'
  
 " Setup the compile rule for pdf to use pdflatex with synctex enabled
-"let g:Tex_CompileRule_pdf = 'pdflatex -synctex=1 --interaction=nonstopmode $*' 
+let g:Tex_CompileRule_pdf = 'pdflatex -synctex=1 --interaction=nonstopmode $*' 
  
 " PDF display rule
-"let g:vimtex_view_method = 'skim'
+let g:vimtex_view_method = 'skim'
 
-"let g:vimtex_view_general_options = '-r @line @pdf @tex'
+let g:vimtex_view_general_options = '-r @line @pdf @tex'
 
 """"""""""""""""""Snippets""""""""""""""""""""""""""""""""""""
 let g:UltiSnipsExpandTrigger="<tab>"
