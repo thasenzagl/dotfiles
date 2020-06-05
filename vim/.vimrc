@@ -12,10 +12,8 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'JuliaEditorSupport/julia-vim'
 Plugin 'tmhedberg/SimpylFold' " python folding
 Plugin 'christoomey/vim-tmux-navigator' "tmux split screen navigation
-Plugin 'suan/vim-instant-markdown'
 Plugin 'morhetz/gruvbox' "gruvbox colorscheme
 Plugin 'lervag/vimtex' "latex integration for vim
-Plugin 'SirVer/ultisnips' " Track the engine.
 
 " All of your Plugins must be added before the following line
 call vundle#end() 
@@ -34,10 +32,6 @@ set nu
 
 """""""""""""""""""tabs,spaces,indents""""""""""""""""""""""""
 set tabstop=4
-set expandtab
-set shiftwidth=4
-set smarttab
-set autoindent
 
 """""""""""""""""""Colorscheme"""""""""""""""""""""""""""""""
 colorscheme gruvbox 
@@ -64,6 +58,3 @@ let g:Tex_CompileRule_pdf = 'pdflatex -synctex=1 --interaction=nonstopmode $*'
 let g:vimtex_view_method = 'skim'
 
 let g:vimtex_view_general_options = '-r @line @pdf @tex'
-
-""""""""""""""""""Snippets""""""""""""""""""""""""""""""""""""
-let g:UltiSnipsExpandTrigger="<tab>"
