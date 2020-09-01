@@ -17,6 +17,7 @@ Plugin 'lervag/vimtex' "latex integration for vim
 
 " All of your Plugins must be added before the following line
 call vundle#end() 
+filetype plugin on
 
 """""""""""""""""""Silence Python3 (NOT IDEAL)""""""""""""""""
 if has('python3')
@@ -60,7 +61,3 @@ let g:Tex_CompileRule_pdf = 'pdflatex -synctex=1 --interaction=nonstopmode $*'
 let g:vimtex_view_method = 'skim'
 
 let g:vimtex_view_general_options = '-r @line @pdf @tex'
-
-" Suppress error checking 
-let g:tex_no_error=1
-
