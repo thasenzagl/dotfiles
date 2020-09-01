@@ -48,7 +48,7 @@ set clipboard=unnamed
 
 """"""""""""""""""Vimtex""""""""""""""""""""""""""""""""""""
 " Set default tex flavor to latex
- let g:tex_flavor='latex'
+let g:tex_flavor='latex'
 
 " Change default target to pdf, if not dvi is used
 let g:Tex_DefaultTargetFormat = 'pdf'
@@ -60,3 +60,7 @@ let g:Tex_CompileRule_pdf = 'pdflatex -synctex=1 --interaction=nonstopmode $*'
 let g:vimtex_view_method = 'skim'
 
 let g:vimtex_view_general_options = '-r @line @pdf @tex'
+
+" Suppress error checking 
+let g:tex_no_error=1
+
