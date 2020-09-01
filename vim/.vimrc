@@ -17,7 +17,6 @@ Plugin 'lervag/vimtex' "latex integration for vim
 
 " All of your Plugins must be added before the following line
 call vundle#end() 
-filetype plugin indent on 
 
 """""""""""""""""""Silence Python3 (NOT IDEAL)""""""""""""""""
 if has('python3')
@@ -48,6 +47,9 @@ nnoremap <C-H> <C-W><C-H>
 set clipboard=unnamed
 
 """"""""""""""""""Vimtex""""""""""""""""""""""""""""""""""""
+" Set default tex flavor to latex
+ let g:tex_flavor='latex'
+
 " Change default target to pdf, if not dvi is used
 let g:Tex_DefaultTargetFormat = 'pdf'
  
