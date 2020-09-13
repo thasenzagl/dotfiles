@@ -61,3 +61,4 @@ let g:Tex_CompileRule_pdf = 'pdflatex -synctex=1 --interaction=nonstopmode $*'
 let g:vimtex_view_method = 'skim'
 
 let g:vimtex_view_general_options = '-r @line @pdf @tex'
+
