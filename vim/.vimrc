@@ -14,6 +14,7 @@ Plugin 'tmhedberg/SimpylFold' " python folding
 Plugin 'christoomey/vim-tmux-navigator' "tmux split screen navigation
 Plugin 'morhetz/gruvbox' "gruvbox colorscheme
 Plugin 'lervag/vimtex' "latex integration for vim
+Plugin 'jpalardy/vim-slime' "send text to live REPL 
 
 " All of your Plugins must be added before the following line
 call vundle#end() 
@@ -62,3 +63,7 @@ let g:vimtex_view_method = 'skim'
 
 let g:vimtex_view_general_options = '-r @line @pdf @tex'
 
+" Set up vim-slime for tmux
+let g:slime_target = "tmux"
+let g:slime_paste_file = "$HOME/.slime_paste" "default
+let g:slime_default_config = {"socket_name": "default", "target_pane": "{last}"} " special token as pane index
