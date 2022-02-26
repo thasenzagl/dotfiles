@@ -49,9 +49,6 @@ nnoremap <C-H> <C-W><C-H>
 set clipboard=unnamed
 
 """"""""""""""""""Vimtex""""""""""""""""""""""""""""""""""""
-" Set default tex flavor to latex
-let g:tex_flavor='latex'
-
 " Change default target to pdf, if not dvi is used
 let g:Tex_DefaultTargetFormat = 'pdf'
  
