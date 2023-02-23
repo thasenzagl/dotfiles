@@ -16,7 +16,7 @@ plugins=(
 # open tmux when terminal is opened
 if [ "$TMUX" = "" ]; then tmux; fi
 
-export PATH=/usr/local/anaconda3/envs/py311/bin:$PATH
+export PATH=/usr/local/anaconda3/envs/base/bin:$PATH
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
