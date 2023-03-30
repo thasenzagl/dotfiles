@@ -37,6 +37,7 @@ set tabstop=4
 """""""""""""""""""Colorscheme"""""""""""""""""""""""""""""""
 colorscheme gruvbox 
 set nocompatible
+set bg=dark
 syntax on
 
 """"""""""""""""""Split Screen"""""""""""""""""""""""""""""""

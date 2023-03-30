@@ -5,3 +5,7 @@
 	email = thomas.hasenzagl@gmail.com
 [credential]
 	helper = osxkeychain
+[http]
+	postBuffer = 157286400
+[https]
+	postBuffer = 2097152000
